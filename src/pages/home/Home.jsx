@@ -1,10 +1,18 @@
 import React from 'react'
 import HeroMain from '../../components/heroMain/heroMain'
+import CarrouselHome from '../../components/carrouselHome/CarrouselHome'
 
 const home = () => {
     return (
         <>
-        <div><HeroMain/></div>
+        <section className='HeroMain'>
+            <HeroMain/>
+        </section>
+            
+        <section className='carrouselHome'>
+            <CarrouselHome/>
+        </section>
+        <div></div>
 
         
                 

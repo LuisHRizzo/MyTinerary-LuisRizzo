@@ -1,6 +1,6 @@
 .bannerHero{
     display: flex;
-    margin: 3rem auto;
+    margin: 2rem auto;
     max-width: 100vw;
     height: 60vh;
     background-image: url(./bannerHero.jpg);
@@ -15,7 +15,7 @@
     height: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: left;
+    justify-content: center;
 }
 .boxHero{
     flex-basis: 70%;
@@ -26,5 +26,5 @@ h1{
     font-size: 60px;
 }
 .callToAction{
-    align-content: center;
+    align-items: center;
 }

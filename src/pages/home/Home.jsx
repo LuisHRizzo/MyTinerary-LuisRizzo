@@ -12,7 +12,7 @@ const home = () => {
         <section className='carrouselHome'>
             <CarrouselHome/>
         </section>
-        <div></div>
+        
 
         
                 

@@ -89,8 +89,8 @@ const CarrouselHome = () => {
             <div className='carouselTitle' >
                 <h2>Popular MyTineraries</h2>
             </div>
-            <div className='roww'>
-                <div className='column'>
+            <div className='row justify-content-evenly'>
+                <div className='col column'>
                     <div className='photo'>
                     <img src={photoCities[slide][0].image} style={{width: '100%', height:'100%'}} />
                     <div className='name'> {photoCities[slide][0].name} </div> 
@@ -100,7 +100,7 @@ const CarrouselHome = () => {
                     <div className='name'> {photoCities[slide][1].name} </div>
                     </div>                    
                 </div>
-                <div className='column'>
+                <div className='col column'>
                     <div className='photo'>
                     <img src={photoCities[slide][2].image} style={{width: '100%', height:'100%'}} />
                     <div className='name'> {photoCities[slide][2].name} </div> 

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const cities = () => {
+const Cities = () => {
   return (
-    <div>cities</div>
+    <div>Cities</div>
   )
 }
 
-export default cities
+export default Cities

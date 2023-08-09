@@ -17,3 +17,9 @@
     padding-left: 1rem;
     align-items: start;
 }
+.pending{
+    color: gainsboro;
+}
+.active{
+    font-weight: bolder;
+}

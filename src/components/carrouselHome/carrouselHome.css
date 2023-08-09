@@ -15,7 +15,7 @@
 .carouselSlide{
     display: flex;
     width: 80%;
-    max-height: 75vh;
+    /* max-height: 75vh; */
     background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/infobae/I2XXANNSMNHXFBVMDKGSYBOOCI.jpg);
     background-repeat: no-repeat;
     object-fit: contain;
@@ -29,77 +29,6 @@
     align-items: center;
     color: white;
 }
-.roww {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    justify-content: center;
-  }
-.column {
-    flex: 30%;
-    max-width: 30%;
-    max-height: 30%;
-    padding: 0 4px;
-    margin: 4px;
-    
-  }
-.photo{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    min-height: fit-content;
-    margin-bottom: 1rem;
-}
-.name{
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-@media (max-width: 412px) {
-    
-    .carouselSlide{
-        display: flex;
-        width: 90%;
-        height: 130vh;
-        background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/infobae/I2XXANNSMNHXFBVMDKGSYBOOCI.jpg);
-        background-repeat: no-repeat;
-        object-fit: contain;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    
-        
-    }
-    .carouselTitle{
-        justify-content: center;
-        align-items: center;
-        color: white;
-    }
-    .roww {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 4px;
-        justify-content: center;
-      }
-    .column {
-        flex: 100%;
-        max-width: 80%;
-        max-height: 100%;
-        padding: 0 4px;
-        margin: 4px;
-      }
-    .photo{
-        position: relative;
-        display: inline-block;
-        text-align: center;
-    }
-    .name{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-    }
+.card{
+    margin: 1rem;
 }

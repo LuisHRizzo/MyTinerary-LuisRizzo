@@ -23,7 +23,7 @@ const Navbar = () => {
                     isPending ? "pending" :  
                     isActive ? "active" : "pending"} 
                     to="/cities">CITIES</NavLink></div>
-        <div><button type="button" class="btn btn-primary navButtons">LogIn</button></div>        
+        <div><button type="button" className="btn btn-primary navButtons">LogIn</button></div>        
       </nav>
     </>
   )

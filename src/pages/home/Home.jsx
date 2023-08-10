@@ -11,11 +11,7 @@ const home = () => {
             
         <section className='carrouselHome'>
             <CarrouselHome/>
-        </section>
-        
-
-        
-                
+        </section>      
         
 
         </>

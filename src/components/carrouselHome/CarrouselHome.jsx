@@ -3,7 +3,8 @@ import './carrouselHome.css';
 import { useState, useEffect } from 'react';
 import { FcPrevious } from "react-icons/fc";
 import { FcNext } from "react-icons/fc";
-
+import { v4 } from 'uuid'
+ 
 const CarrouselHome = () => {
     const photoCities = [
         [
@@ -99,13 +100,13 @@ const CarrouselHome = () => {
                 </div>
                 <div className='d-flex align-content-center flex-wrap justify-content-evenly'>
                     {
-                        photoCities[slide].map(card =>
-                            <div key={slide.name} class="card bg-dark text-white align-self-center ">
-                                <img src={card.image} class="card-img" 
+                        photoCities[slide].map(card => 
+                            <div key={v4()} className="card bg-dark text-white align-self-center ">
+                                <img src={card.image} className="card-img" 
                                     style={{width: '300px', height:'200px'}} 
                                     alt={card.name}/>
-                                    <div class="card-img-overlay">
-                                        <h5 class="card-title">{card.name}</h5>
+                                    <div className="card-img-overlay">
+                                        <h5 className="card-title">{card.name}</h5>
                                     </div>
                             </div>
                         )

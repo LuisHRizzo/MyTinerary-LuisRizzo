@@ -1,0 +1,19 @@
+.banner{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-image: url(./ciudad-destellos.png);
+    background-size: cover;
+    
+}
+
+.bannerContent{
+    margin: 1rem;
+    color:white;
+    display: inline;
+    text-align: center;
+}

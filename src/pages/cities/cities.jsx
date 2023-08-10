@@ -1,8 +1,14 @@
 import React from 'react'
+import BannerCities from '../../components/bannerCities/BannerCities'
 
 const Cities = () => {
   return (
-    <div>Cities</div>
+    <>
+    <section>
+      <BannerCities/>
+    </section>
+    </>
+    
   )
 }
 

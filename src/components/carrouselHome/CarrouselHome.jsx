@@ -1,7 +1,6 @@
 import React from 'react';
 import './carrouselHome.css';
 import { useState, useEffect } from 'react';
-FcPrevious
 import { FcPrevious } from "react-icons/fc";
 import { FcNext } from "react-icons/fc";
 
@@ -66,7 +65,7 @@ const CarrouselHome = () => {
         ]
     ]
 
-    const [slide, setSlide] = useState(0)
+    let [slide, setSlide] = useState(0)
     const prev = () => {
         if (slide == 0) {
             setSlide(photoCities.length - 1)
@@ -75,6 +74,14 @@ const CarrouselHome = () => {
         }
 
     }
+    
+    useEffect(() => {        
+       const interval = setInterval(() => { 
+            next() 
+        }, 3000)
+        return ()=> {clearInterval(interval) }
+    }, )
+
     const next = () => {
         if (slide == photoCities.length - 1) {
             setSlide(0)
@@ -82,6 +89,7 @@ const CarrouselHome = () => {
             setSlide(slide + 1)
         }
     }
+    
     return (
         <div className='carousel' >
             <button className='button' onClick={prev} > <FcPrevious /> </button>
@@ -92,7 +100,7 @@ const CarrouselHome = () => {
                 <div className='d-flex align-content-center flex-wrap justify-content-evenly'>
                     {
                         photoCities[slide].map(card =>
-                            <div class="card bg-dark text-white align-self-center ">
+                            <div key={slide.name} class="card bg-dark text-white align-self-center ">
                                 <img src={card.image} class="card-img" 
                                     style={{width: '300px', height:'200px'}} 
                                     alt={card.name}/>
@@ -101,33 +109,7 @@ const CarrouselHome = () => {
                                     </div>
                             </div>
                         )
-                    }
-
-
-
-
-
-
-                    {/* <div className='col column'>
-                    <div className='photo'>
-                    <img src={photoCities[slide][0].image} style={{width: '100%', height:'100%'}} />
-                    <div className='name'> {photoCities[slide][0].name} </div> 
-                    </div>
-                    <div className='photo'>
-                    <img src={photoCities[slide][1].image} style={{width: '100%', height:'100%'}} />
-                    <div className='name'> {photoCities[slide][1].name} </div>
-                    </div>                    
-                </div>
-                <div className='col column'>
-                    <div className='photo'>
-                    <img src={photoCities[slide][2].image} style={{width: '100%', height:'100%'}} />
-                    <div className='name'> {photoCities[slide][2].name} </div> 
-                    </div>
-                    <div className='photo'>
-                    <img src={photoCities[slide][3].image} style={{width: '100%', height:'100%'}} />
-                    <div className='name'> {photoCities[slide][3].name} </div>
-                    </div>                    
-                </div> */}
+                    }                   
                 </div>
             </div>
 

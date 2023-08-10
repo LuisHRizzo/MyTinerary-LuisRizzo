@@ -31,4 +31,8 @@
 }
 .card{
     margin: 1rem;
+    transition:all .9s ease;
+}
+.card:hover{
+    transform:scale(1.25);
 }

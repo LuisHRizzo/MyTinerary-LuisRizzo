@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className='navButtons'>
           <NavLink className={({ isActive, isPending }) =>
                     isPending ? "pending" :  
-                    isActive ? "active" : ""} 
+                    isActive ? "active" : "pending"} 
                     to="/cities">CITIES</NavLink></div>
         <div><button type="button" class="btn btn-primary navButtons">LogIn</button></div>        
       </nav>

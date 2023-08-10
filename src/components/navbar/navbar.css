@@ -7,7 +7,9 @@
     margin-right: 2rem; 
     display: flex;
     align-items: end;
-    
+}
+.navButtons NavLink{
+    text-decoration: none;
 }
 .navButtons:hover{
     color: dodgerblue;
@@ -17,9 +19,10 @@
     padding-left: 1rem;
     align-items: start;
 }
-.pending{
-    color: gainsboro;
-}
 .active{
     font-weight: bolder;
+    text-decoration:none;
+}
+.pending{
+    text-decoration: none;
 }

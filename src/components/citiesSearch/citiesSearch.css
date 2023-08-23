@@ -1,0 +1,4 @@
+Anchor:visited, Anchor:link, Anchor:active{
+    text-decoration:none;
+    color: white;
+}

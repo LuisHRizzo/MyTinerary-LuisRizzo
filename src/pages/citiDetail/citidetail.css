@@ -1,0 +1,29 @@
+.city-details-container {
+    margin-top: 50px;
+  }
+  
+  .city-details {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .city-details h2 {
+    margin-bottom: 10px;
+  }
+  
+  .city-details p {
+    margin-bottom: 5px;
+  }
+  
+  .city-details-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 576px) {
+    .city-details .col-md-6 {
+      margin-bottom: 20px;
+    }
+  }

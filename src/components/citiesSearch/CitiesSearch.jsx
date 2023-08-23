@@ -1,7 +1,9 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './citiesSearch.css'
 import { useEffect, useState, useMemo, useRef } from 'react'
 import { CiSearch } from "react-icons/ci";
+import { Link as Anchor } from 'react-router-dom';
 
 const CitiesSearch = () => {
 
@@ -24,7 +26,7 @@ const CitiesSearch = () => {
         })
       }, [cities, query])
 
-      function onSubmit(e) {
+/*       function onSubmit(e) {
         e.preventDefault()
     
         const value = inputRef.current.value
@@ -34,7 +36,7 @@ const CitiesSearch = () => {
         })
     
         inputRef.current.value = ""
-      }  
+      } */  
 
     return (
 
@@ -51,13 +53,15 @@ const CitiesSearch = () => {
                     {
                         filteredItems.map(card => 
                             <div key={card._id} className="card bg-dark text-white align-self-center ">
+                                <Anchor to={`./${card._id}`} >
                                 <img src={card.image} className="card-img" 
                                     style={{width: '200px', height:'150px'}} 
-                                    alt={card.name}/>
+                                        alt={card.name}/>
                                     <div className="card-img-overlay">
                                         <h5 className="card-title">{card.name}</h5>
                                         <h6 className='card-title'>{card.country}</h6>
                                     </div>
+                                </Anchor>
                             </div>
                         )
                     }                   

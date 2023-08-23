@@ -21,7 +21,7 @@ const CitiesSearch = () => {
 
         const handleChange = e => {
             setBusqueda(e.target.value);
-            filtrar(e.target.value);
+            filtrar(e.target.value);  
         }
 
 

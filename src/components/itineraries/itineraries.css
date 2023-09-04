@@ -1,0 +1,9 @@
+.price-indicator {
+    width: 100px; /* Establece el ancho deseado para el indicador de precio */
+    height: 20px; /* Establece la altura deseada para el indicador de precio */
+    background-image: url('../itineraries/billete-de-un-dolar.png'); /* Ruta a la imagen */
+    background-repeat: repeat-x; /* Repetir horizontalmente */
+    background-size: contain; /* Ajustar el tamaño de la imagen */
+  }
+
+  

@@ -4,7 +4,7 @@ import './citiDetail.css'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { Link as Anchor } from 'react-router-dom';
-
+import Itineraries from '../../components/itineraries/Itineraries.jsx'
 
 const CitiDetail = () => {
     const [city, setCity] = useState({})
@@ -27,16 +27,16 @@ const CitiDetail = () => {
     return (
         <div className="container city-details-container">
             <div className="row city-details">
-                {city.name ? ( // Verificar si city.name está definido
+                {city.city ? ( // Verificar si city.name está definido . aca podria haber sido length >0 tambien. 
                     <>
                         <div className="col-xs-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-                            <h1>{city.name}</h1>
-                            <h5>Country: {city.country}</h5>
-                            <h5>Description: {city.description}</h5>
-                            <h5>Coin: {city.coin}</h5>
+                            <h1>{city.city.name}</h1>
+                            <h5>Country: {city.city.country}</h5>
+                            <h5>Description: {city.city.description}</h5>
+                            <h5>Coin: {city.city.coin}</h5>
                         </div>
                         <div className="col-xs-12 col-md-6 d-flex align-items-center">
-                            <img src={city.image} alt={city.name} className="img-fluid" />
+                            <img src={city.city.image} alt={city.city.name} className="img-fluid" />
                         </div>
                         <Anchor to={'../cities'}>
                             <button className="btn btn-primary d-flex align-items-center">
@@ -48,10 +48,8 @@ const CitiDetail = () => {
                     <p>Loading city details...</p>
                 )}
             </div>
-            <div className='flex-column justify-content-center align-items-center'>
-                <h1>Under construction...</h1>
+                <Itineraries/>
             </div>
-        </div>
     )
 }
 

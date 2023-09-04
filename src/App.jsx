@@ -31,11 +31,8 @@ const router = createBrowserRouter([
 
 function App() {
     return (
-    <><div className='appLayout' >
-          
+    <>          
       <RouterProvider router={router} />
-
-      </div>
     </>
   )
 }

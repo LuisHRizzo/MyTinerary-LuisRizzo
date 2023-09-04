@@ -8,9 +8,11 @@ import { Outlet } from 'react-router-dom'
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className='appLayout'>
         <Navbar/>
+        <main className='flex-grow-1'>
         <Outlet/>
+        </main>
         <Footer/>
     </div>
   )

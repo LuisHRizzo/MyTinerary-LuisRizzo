@@ -58,8 +58,8 @@ const CitiesSearch = () => {
                                     style={{width: '200px', height:'150px'}} 
                                         alt={card.name}/>
                                     <div className="card-img-overlay">
-                                        <h5 className="card-title">{card.name}</h5>
-                                        <h6 className='card-title'>{card.country}</h6>
+                                        <h5 className="card-title cardTitleName">{card.name}</h5>
+                                        <h6 className='card-title cardTitleCountry'>{card.country}</h6>
                                     </div>
                                 </Anchor>
                             </div>

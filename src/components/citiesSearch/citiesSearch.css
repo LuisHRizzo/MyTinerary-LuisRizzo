@@ -1,4 +1,10 @@
 Anchor:visited, Anchor:link, Anchor:active{
     text-decoration:none;
-    color: white;
+}
+.cardTitleName{
+    color: black !important;
+}
+.cardTitleCountry{
+    color: white !important;
+
 }

@@ -1,6 +1,6 @@
 import React from 'react'
-import BannerCities from '../../components/bannerCities/BannerCities'
-import CitiesSearch from '../../components/citiesSearch/citiesSearch'
+import BannerCities from '../../components/bannerCities/BannerCities.jsx'
+import CitiesSearch from '../../components/citiesSearch/CitiesSearch.jsx'
 
 
 const Cities = () => {

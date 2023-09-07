@@ -1,10 +1,13 @@
 import React from 'react';
 import './carrouselHome.css';
 import { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { FcPrevious } from "react-icons/fc";
 import { FcNext } from "react-icons/fc";
 import { v4 } from 'uuid'
- 
+
+
+
 const CarrouselHome = () => {
     const photoCities = [
         [

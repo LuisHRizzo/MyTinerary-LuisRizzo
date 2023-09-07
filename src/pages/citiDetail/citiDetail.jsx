@@ -19,7 +19,7 @@ const CitiDetail = () => {
     useEffect(() => {
         dispatch(cargarCity(id));
     }, []);
-
+    console.log(city.itineraries)
     return (
         <div className="container city-details-container">
             <div className="row city-details">
@@ -40,7 +40,7 @@ const CitiDetail = () => {
                             </button>
                         </Anchor>
                         <div className="container city-details-container">
-                            <Itineraries itineraries={city.itineraries} />
+                            <Itineraries itineraries={city?.itineraries} />
                         </div>
                     </>
                 ) : (

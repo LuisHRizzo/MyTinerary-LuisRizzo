@@ -22,7 +22,7 @@ const Itineraries = ({ itineraries }) => {
             <div className="container city-details-container">
                 <div className="row city-details">
                     <div className="col-xs-12 col-md-12 d-flex flex-column justify-content-center align-items-center">
-                        {!itineraries.length==0?(itineraries.map(itinerary => <ItineraryCard  key={itinerary._id} itinerary={itinerary}/> )):(<h1>Under Construction.</h1>)}
+                        {itineraries?.length == 0?(<h1>Under Construction.</h1>):(itineraries?.map(itinerary => <ItineraryCard  key={itinerary._id} itinerary={itinerary}/> ))}
                     </div>
                 </div>
             </div>

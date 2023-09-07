@@ -28,7 +28,6 @@ const CitiesSearch = () => {
        if (cities.length === 0) {
             dispatch(cargarCities())
         } 
-/*         getAllCities().then(data=> console.log(data)).catch(err => console.log(err)) */
 
     }, []);
 
@@ -44,7 +43,7 @@ const CitiesSearch = () => {
 
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
     const visibleCities = filteredCities.slice(startIndex, startIndex + ITEMS_PER_PAGE);
-
+    console.log(visibleCities)
     const handlePageChange = (page) => {
         setCurrentPage(page);
     };
@@ -60,6 +59,7 @@ const CitiesSearch = () => {
                     defaultValue = {valueFilter}
                 />
             </div>
+            {!visibleCities.length == 0?(
             <div className="d-flex align-content-center flex-wrap justify-content-evenly">
                 {visibleCities.map((card, index) => (
                     <div key={card._id} className="card bg-dark text-white align-self-center ">
@@ -75,6 +75,7 @@ const CitiesSearch = () => {
                 </div>
                 ))}
             </div>
+            ):(<h1>There is no match for your query </h1> )}
             <div className="d-flex align-content-center flex-wrap justify-content-center">
                 <Pagination>
                     <Pagination.Prev

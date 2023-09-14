@@ -4,8 +4,12 @@ import './App.css'
 import Home from './pages/home/home';
 import Cities from './pages/cities/cities';
 import CitiDetail from './pages/citiDetail/citiDetail';
+import Login from './pages/login/Login';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Link as Anchor, NavLink } from 'react-router-dom';
+import { useDispatch } from 'react-redux'
+import { useEffect } from 'react'
+import { setUser } from './redux/actions/userActions.js'
 
 const router = createBrowserRouter([
   {
@@ -23,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: '/cities/:id',
         element: <CitiDetail/>,
+      },
+      {
+        path: '/login',
+        element: <Login/>
       }
     ] 
   }
@@ -30,6 +38,13 @@ const router = createBrowserRouter([
 
 
 function App() {
+  
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(setUser());
+  }, [])
+
     return (
     <>          
       <RouterProvider router={router} />
